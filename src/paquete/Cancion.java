@@ -126,6 +126,7 @@ public class Cancion {
 			if (canciones[i].duracion > max) {
 				posMax = i;
 				max = canciones[i].duracion;
+				System.out.println("a");
 			}
 		}
 		return canciones[posMax].titulo;
