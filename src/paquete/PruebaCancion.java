@@ -20,7 +20,8 @@ public class PruebaCancion {
 		Cancion primeraCancion = new Cancion("I Don't Like Mondays", "The Boomtown Rats", 390, true);
 		Cancion segundaCancion = new Cancion("Don’t Stop Believin’", "Journey", 320, false);
 		Cancion terceraCancion = new Cancion("Come Join The Murder", "The White Buffalo & The Forest Rangers", 420, false);
-
+		Cancion cuartaCancion = new Cancion("La gitanas lo bailan asi","Canelita",380,false);
+		Cancion quintaCancion = new Cancion("Baila el chiki chiki","Chiquilicuatre",410,false);
 		if (primeraCancion.reproducirCancion()) {
 			System.out.println(primeraCancion.getTitulo() + "está sonando");
 		}
@@ -31,7 +32,7 @@ public class PruebaCancion {
 			System.out.println("Parece que no son la misma canción");
 		}
 		Cancion nueva = new Cancion("Baba O'riley", "The Who", 310, false);
-		Cancion[] canciones = { primeraCancion, segundaCancion, terceraCancion, nueva };
+		Cancion[] canciones = { primeraCancion, segundaCancion, terceraCancion, nueva ,cuartaCancion,quintaCancion};
 		
 		mostrarCancionesyAutor(canciones);
 		mostrarCancionMasLarga(canciones);
